@@ -2,7 +2,7 @@ require 'selenium/webdriver'
 
 class Selenium::WebDriver::Firefox::Profile
   def enable_firebug
-    add_extension(File.expand_path("../firebug-1.6.2.xpi", __FILE__))
+    add_extension(File.expand_path("../firebug-1.7.0.xpi", __FILE__))
 
     # Prevent "Welcome!" tab
     self["extensions.firebug.currentVersion"] = "999"
