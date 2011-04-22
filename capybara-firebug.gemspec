@@ -18,9 +18,7 @@ enabled under the selenium driver.}
   s.executables   = `git ls-files -- bin/*`.split("\n").map{ |f| File.basename(f) }
   s.require_paths = ["lib"]
 
-  # We rely on this 0.4.1.2 bug fix:
-  # https://github.com/jnicklas/capybara/commit/90a1cf78ab782a5cb596a8c3d8611e465d591cd1
-  s.add_dependency "capybara", "~> 0.4.1.2"
+  s.add_dependency "capybara", "~> 0.4.1.1"
 
   s.add_development_dependency "rspec", "~> 2.0"
   s.add_development_dependency "cucumber", "~> 0.10.0"
